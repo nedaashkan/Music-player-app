@@ -1,0 +1,244 @@
+/* put the different fonts */
+/* add icons from fontawsome */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.radio-controls-volume {
+  appearance: none;
+  background: #fff;
+  border-radius: 30px;
+  height: 6px;
+  outline: none;
+  display: block;
+  margin: 0 auto 20px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.radio-track-spotify {
+  background: url(https://www.shecodes.io/assets/logos/spotify-7d805d10968705dedd6744ccf27312e8abb71369662f1605d181ab440c371d36.png)
+    no-repeat;
+  background-size: 38px 38px;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.radio-player {
+  padding: 20px 40px;
+  margin-top: 20px;
+  background: #f5f2fe;
+  border-radius: 24px;
+  background-image: linear-gradient(to top, #e7f0fd 0%, #fff 100%);
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+  width: 50%;
+  /* min-width:95%; */
+  max-width: 95%;
+}
+/* u will make different class for background color to change in in javascript*/
+.radio-track {
+  padding-bottom: 20px;
+  display: flex;
+  border-bottom: 0.5px solid rgba(39, 33, 66, 0.1);
+  position: relative;
+}
+.radio-filters {
+  padding-top: 15px;
+}
+.radio-filters-list {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.radio-filters-list li {
+  list-style: none;
+  margin-right: 10px;
+}
+li span {
+  text-transform: uppercase;
+  border: 1px solid rgba(39, 33, 66, 0.1);
+  border-radius: 20px;
+  padding: 8px 12px;
+  transition: all 150ms ease-in-out;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+}
+input[type="range"] {
+  accent-color: #885df1;
+}
+.radio-filters-list-firstly li span:hover {
+  background-color: #885df1;
+  border-color: #885df1;
+  color: #fff;
+}
+.radio-filters-list-secondary li span:hover {
+  border-color: #885df1;
+  color: #885df1;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.track-img {
+  box-shadow: 0px 0 15px rgb(0 0 0 / 40%);
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  transition: all 300ms ease-in-out;
+}
+.radio-track-playing {
+  border-radius: 50%;
+  /* add animation */
+  /* background: #272142; */
+  /* padding: 35px; */
+  /* background-image: linear-gradient(
+    -160deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 60%
+  ); */
+}
+.radio-label {
+  background-color: transparent;
+  border: 1px solid rgba(39, 33, 66, 0.1);
+  display: inline-block;
+  color: #2c234d;
+  font-weight: 500;
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border-radius: 4px;
+  line-height: 15px;
+}
+.radio-track-info h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  padding: 0;
+  color: #000;
+  margin: 6px 0;
+}
+.radio-track-info h3 {
+  font-family: "Source Code Pro";
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+
+.radio-controls {
+  position: relative;
+  border-bottom: 0.5px solid rgba(39, 33, 66, 0.1);
+}
+
+.radio-controls-play,
+.radio-controls-pause,
+.radio-controls-skip,
+.radio-controls-save {
+  background: #fff
+    url(https://www.shecodes.io/assets/radio/play-a9086682f1e0d4c246fa2f181427afc651fd6add28c22ea56b8448b2a64fa7b0.png)
+    no-repeat;
+  background-size: 60px;
+  display: block;
+  margin: 30px auto;
+  border: none;
+  box-shadow: 0px 4px 40px rgb(39 33 66 / 5%);
+  border-radius: 50%;
+  background-position: center;
+  transition: transform 150ms ease-in-out;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  outline: none;
+}
+.radio-controls-save {
+  position: absolute;
+  top: -10px;
+  background: url(https://www.shecodes.io/assets/radio/save-14e8785b250b6b45fced8e1e5d5330b45d9132598e482758d9ddb9e78b788515.png)
+    no-repeat;
+  background-size: 30px;
+  box-shadow: none;
+  width: 60px;
+  height: 60px;
+  left: calc(50% - 120px);
+  background-position: center;
+}
+
+.radio-controls-pause {
+  /* background: #fff
+    url(https://www.shecodes.io/assets/radio/pause-e3a6420dbf6de0fe5b8d090c3aab96e9a5798caa25e8b17d01a49d0fd9224e33.png)
+    no-repeat; */
+  /* display on off for this */
+  background-size: 60px;
+  background-position: center;
+}
+
+.radio-controls-skip {
+  position: absolute;
+  top: -10px;
+  background: url(https://www.shecodes.io/assets/radio/skip-9d8828c986146b48488fce911ebd3c82b27c453cf2c67752da309a07d84665df.png)
+    no-repeat;
+  background-size: 40px;
+  box-shadow: none;
+  width: 60px;
+  height: 60px;
+  left: calc(50% + 60px);
+  background-position: center;
+}
+.radio-filters-list-firstly li .selected {
+  border-color: #885df1;
+  background-color: #885df1;
+  color: white;
+}
+.radio-filters-list-secondary li .selected {
+  border-color: #885df1;
+  color: #885df1;
+  font-weight: 600;
+  background-color: transparent;
+}
+.radio-filters p {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* .col-md-1 {
+  border: 1px solid rgb(255, 0, 0);
+}
+.col-md-2 {
+  border: 1px solid rgb(255, 115, 0);
+}
+.col-md-3 {
+  border: 1px solid rgb(255, 238, 0);
+}
+.col-md-4 {
+  border: 1px solid rgb(115, 255, 0);
+}
+.col-md-5 {
+  border: 1px solid rgb(0, 255, 170);
+}
+.col-md-6 {
+  border: 1px solid rgb(0, 38, 255);
+}
+.col-md-7 {
+  border: 1px solid rgb(93, 9, 100);
+}
+.col-md-8 {
+  border: 1px solid rgb(255, 18, 196);
+}
+.col-md-9 {
+  border: 1px solid rgb(80, 40, 52);
+}
+.col-md-10 {
+  border: 1px solid rgb(10, 44, 7);
+}
+.col-md-11 {
+  border: 1px solid rgb(50, 74, 97);
+}
+.col-md-12 {
+  border: 1px solid rgb(68, 82, 5);
+} */
+/* inspiration from shecodes radio*/
