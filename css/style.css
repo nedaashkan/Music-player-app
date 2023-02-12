@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "monospace", "Brush Script MT", "cursive";
+}
 .radio-controls-volume {
   appearance: none;
   background: #fff;
@@ -28,16 +32,19 @@
   right: 0;
   top: 0;
 }
+.radio {
+  background: #ffffff;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
 .radio-player {
   padding: 20px 40px;
-  margin-top: 20px;
   background: #f5f2fe;
+  margin: 40px auto 20px;
   border-radius: 24px;
   background-image: linear-gradient(to top, #e7f0fd 0%, #fff 100%);
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
-  width: 50%;
-  /* min-width:95%; */
-  max-width: 95%;
+  font-family: PT Mono, monospace;
 }
 /* u will make different class for background color to change in in javascript*/
 .radio-track {
@@ -50,15 +57,18 @@
   padding-top: 15px;
 }
 .radio-filters-list {
+  margin: 0;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 .radio-filters-list li {
+  display: inline-block;
   list-style: none;
-  margin-right: 10px;
+  margin: 8px 4px;
+  border-radius: 20px;
 }
-li span {
+
+.radio-filters-list li span {
   text-transform: uppercase;
   border: 1px solid rgba(39, 33, 66, 0.1);
   border-radius: 20px;
@@ -66,7 +76,6 @@ li span {
   transition: all 150ms ease-in-out;
   font-size: 12px;
   text-decoration: none;
-  display: block;
 }
 input[type="range"] {
   accent-color: #885df1;
@@ -122,7 +131,6 @@ input[type="range"] {
   margin: 6px 0;
 }
 .radio-track-info h3 {
-  font-family: "Source Code Pro";
   margin: 0;
   font-size: 16px;
   line-height: 1.5;

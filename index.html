@@ -14,72 +14,80 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
-    <div class="container radio-player">
-      <div class="row gx-0 radio-track">
-        <div class="col-md-5 col-sm-12">
-          <img
-            src="https://i.scdn.co/image/ab67616d0000b273235e762de339c6076aa824dd"
-            alt=""
-            class="track-img"
-          />
-        </div>
-        <div class="col-md-7 col-sm-12 radio-track-info">
-          <a href="#" target="_blank" class="radio-track-spotify"></a>
-          <small class="radio-label">📻 Now Playing / Ready to play</small>
-          <h2>Red Lines</h2>
-          <h3>by SOHN</h3>
-        </div>
-      </div>
-      <div class="row radio-filters">
-        <ul class="radio-filters-list radio-filters-list-firstly">
-          <li><span class="selected">⚡️ Energy </span></li>
-          <li><span>🧘‍♀️ Calm Station</span></li>
-          <li><span>🌱 Exotic </span></li>
-          <li><span>🪐 Space </span></li>
-        </ul>
-      </div>
-      
-        <div class="radio-controls">
-          <button class="radio-controls-pause"></button
-          ><span class="radio-controls-save"></span
-          ><span class="radio-controls-skip"></span
-          ><input
-            type="range"
-            min="1"
-            max="100"
-            class="radio-controls-volume"
-            value="50"
-          />
-        </div>
+    <div class="container">
+      <div class="radio">
+        <div class="radio-player">
+          <div class="row gx-0 radio-track">
+            <div class="col-md-5">
+              <img
+                src="https://i.scdn.co/image/ab67616d0000b273235e762de339c6076aa824dd"
+                alt=""
+                class="track-img"
+              />
+            </div>
+            <div class="col-md-7 radio-track-info">
+              <a href="#" target="_blank" class="radio-track-spotify"></a>
+              <small class="radio-label">📻 Now Playing / Ready to play</small>
+              <h2>Red Lines</h2>
+              <h3>by SOHN</h3>
+            </div>
+          </div>
 
-      <div class="radio-filters">
-        <ul class="radio-filters-list radio-filters-list-secondary">
-          <li>
-            <span class="selected"
-              ><i class="fas fa-random" aria-hidden="true"></i> Shuffle</span
-            >
-          </li>
-          <li>
-            <span
-              ><i class="fas fa-fire-alt" aria-hidden="true"></i> Trending</span
-            >
-          </li>
-          <li>
-            <span><i class="far fa-star" aria-hidden="true"></i> Recent</span>
-          </li>
-        </ul>
-      </div>
-      <div
-        class="row radio-filters radio-filters-list-secondary"
-      >
-        <div class="row">
-          <p>🌡 Energy level</p>
-          <ul class="radio-filters-list">
-            <li><span>Low energy</span></li>
-            <li><span>Medium energy</span></li>
-            <li><span>High energy</span></li>
-            <li><span class="selected">All tracks</span></li>
-          </ul>
+          <!-- radio-filters-list-firstly -->
+          <div class="row radio-filters">
+            <ul class="radio-filters-list radio-filters-list-firstly">
+              <li><span class="selected">⚡️ Energy Station </span></li>
+              <li><span>🧘‍♀️ Calm </span></li>
+              <li><span>🌱 Exotic </span></li>
+              <li><span>🪐 Space </span></li>
+            </ul>
+          </div>
+          <!-- radio-controls -->
+          <div class="radio-controls">
+            <button class="radio-controls-pause"></button
+            ><span class="radio-controls-save"></span
+            ><span class="radio-controls-skip"></span
+            ><input
+              type="range"
+              min="1"
+              max="100"
+              class="radio-controls-volume"
+              value="50"
+            />
+          </div>
+
+          <!-- radio filters list secondary -->
+          <div class="radio-filters">
+            <ul class="radio-filters-list radio-filters-list-secondary">
+              <li>
+                <span class="selected"
+                  ><i class="fas fa-random" aria-hidden="true"></i>
+                  Shuffle</span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="fas fa-fire-alt" aria-hidden="true"></i>
+                  Trending</span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="far fa-star" aria-hidden="true"></i> Recent</span
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- radio filters list secondary -->
+          <div class="radio-filters radio-filters-list-secondary">
+            <p>🌡 Energy level</p>
+            <ul class="radio-filters-list">
+              <li><span>Low energy</span></li>
+              <li><span>Medium energy</span></li>
+              <li><span>High energy</span></li>
+              <li><span class="selected">All tracks</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
